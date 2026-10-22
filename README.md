@@ -137,7 +137,7 @@ Ne changez pas ces noms sans prévenir le groupe.
   `{"question": "...", "choix": ["A) ...", "B) ..."], "reponse": "B", "categorie": "git"}`
 - `jouer(questions)` reçoit une liste de questions et retourne le nombre de bonnes réponses (entier).
 - `calculer_score(bonnes, total)` retourne un pourcentage entre 0 et 100.
-- Un score de classement est un dictionnaire : `{"nom": "Yassine", "score": 80}`.
+- Un score de classement est un dictionnaire : `{"nom": "eric", "score": 80}`.
 
 ---
 
