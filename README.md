@@ -44,7 +44,7 @@ Votre réponse (A, B ou C) : C
 Bravo Sara ! Score : 75.0% - Mention : Très bon
 ```
 
-Le programme est découpé en **7 fichiers**. Chaque fichier correspond à une **tâche**. Chaque personne choisit une tâche et ne code que dans le fichier correspondant.
+Le programme est découpé en **7 fichiers**. Chaque fichier correspond à une **tâche**. 
 
 | Fichier | Son rôle en une phrase |
 |---|---|
@@ -60,24 +60,7 @@ Le programme est découpé en **7 fichiers**. Chaque fichier correspond à une *
 
 ## 2. Avant de commencer
 
-Vérifiez que tout est installé. Ouvrez un terminal et tapez ces commandes **une par une** :
-
-```bash
-python3 --version
-git --version
-```
-
-Chacune doit afficher un numéro de version (par exemple `Python 3.12.3`). Si vous voyez `command not found`, demandez de l'aide au groupe.
-
-Il vous faut aussi :
-
-- un compte **GitHub** ;
-- l'**invitation** à rejoindre le dépôt (vous la recevez par mail, il faut cliquer sur « Accept invitation ») ;
-- **VS Code** pour écrire le code.
-
-> **Important** : dans ce guide, les blocs gris avec `git ...` ou `python3 ...` sont à taper **dans le terminal**. Ne collez jamais le résultat affiché par le terminal, seulement les commandes.
-
----
+Vérifiez que tout est installé. Ouvrez un terminal .
 
 ## 3. Pas à pas : de zéro à ma première contribution
 
