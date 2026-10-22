@@ -106,11 +106,9 @@ Vous voyez alors la liste des fichiers à gauche. C'est dans ces fichiers que vo
 
 ### Étape 3 : Choisir sa tâche
 
-1. Regardez le tableau de la [section 4](#4-où-coder--les-7-tâches-en-détail).
-2. Choisissez une tâche **que personne n'a encore prise**.
-3. Prévenez le groupe (message ou discussion du groupe) : « Je prends `score.py` ».
+Regardez le tableau de la [section 4](#4-où-coder--les-7-tâches-en-détail) et choisissez la tâche qui vous plaît. Plusieurs personnes peuvent travailler sur la même, c'est autorisé.
 
-> **Si deux personnes veulent la même tâche** : pas de problème ! Chacune crée **son propre fichier** avec son prénom, par exemple `score_sara.py` et `score_yassine.py`. Le groupe choisira ensuite la meilleure version (ou prendra le meilleur de chacune).
+Si vous voulez éviter d'écraser le fichier d'un camarade, créez **votre propre fichier** avec votre prénom, par exemple `score_sara.py`.
 
 ### Étape 4 : Créer sa branche
 
@@ -171,25 +169,24 @@ Vous devez voir votre fichier en rouge (modifié). Ensuite :
 ```bash
 git add score.py
 git commit -m "Ajout de calculer_score et get_mention"
-git push origin tache-score
+git push -u origin HEAD
 ```
 
 - Remplacez `score.py` par **votre** fichier.
 - Remplacez le message entre guillemets par une phrase qui explique ce que vous avez fait.
-- Remplacez `tache-score` par le nom de **votre** branche.
-
-Si Git vous demande un identifiant ou un mot de passe, utilisez votre compte GitHub (et un « token » si le mot de passe est refusé : demandez de l'aide).
+- `git push -u origin HEAD` envoie **la branche sur laquelle vous êtes**, sans avoir à écrire son nom.
 
 ### Étape 8 : Ouvrir une Pull Request
 
-La **Pull Request** (PR) est une demande de fusion : vous proposez d'ajouter votre travail au projet principal.
+Une **Pull Request** est une demande pour ajouter votre travail au projet principal (`main`).
 
 1. Allez sur `https://github.com/yassinemaalla-lab/new_group_project`.
-2. Un bandeau jaune apparaît avec le bouton **Compare & pull request**. Cliquez dessus.
-3. Vérifiez que c'est écrit `base: main` à gauche.
-4. Écrivez un titre clair, par exemple « Tâche 4 : score.py ».
+2. Juste après votre push, un **bandeau jaune** apparaît en haut de la page avec le bouton **Compare & pull request**. Cliquez dessus.
+   S'il n'apparaît pas : onglet **Pull requests**, puis **New pull request**, et choisissez votre branche.
+3. Vérifiez que `base` est bien `main`. C'est l'endroit où votre travail doit **arriver** (votre branche est celle d'où il **vient**).
+4. Écrivez un titre qui dit ce que vous ajoutez, par exemple « Ajout de score.py ».
 5. Cliquez sur **Create pull request**.
-6. Prévenez le groupe : quelqu'un relit votre code, puis le responsable du dépôt clique sur **Merge pull request**.
+6. Sur la même page, cliquez sur **Merge pull request**, puis **Confirm merge**. Votre travail est maintenant dans `main`.
 
 ### Étape 9 : Récupérer le travail des autres
 
@@ -206,17 +203,17 @@ Pour commencer une nouvelle tâche, repartez de l'étape 4.
 
 ## 4. Où coder ? Les 7 tâches en détail
 
-Écrivez votre prénom dans la colonne « Responsable » **avant** de commencer (en modifiant le fichier sur votre branche, ou en le disant au groupe).
+Choisissez la tâche que vous voulez, n'importe laquelle.
 
-| Tâche | Fichier | Difficulté | Responsable |
-|---|---|---|---|
-| 1 | `main.py` | moyenne | |
-| 2 | `questions.py` | facile | |
-| 3 | `jeu.py` | moyenne | |
-| 4 | `score.py` | facile | |
-| 5 | `classement.py` | difficile | |
-| 6 | `affichage.py` | facile | |
-| 7 (bonus) | `utils.py` | difficile | |
+| Tâche | Fichier | Difficulté |
+|---|---|---|
+| 1 | `main.py` | moyenne |
+| 2 | `questions.py` | facile |
+| 3 | `jeu.py` | moyenne |
+| 4 | `score.py` | facile |
+| 5 | `classement.py` | difficile |
+| 6 | `affichage.py` | facile |
+| 7 (bonus) | `utils.py` | difficile |
 
 Pour chaque tâche : **où coder**, **ce qu'il faut obtenir**, **un indice** et **un test à coller** en bas de votre fichier. Pour revoir les notions, relisez les PDF du cours (Jour 2 boucles, Jour 3 conditions, Jour 4 fonctions, Jour 6 listes, Jour 7-8 algo).
 
@@ -488,7 +485,7 @@ Les 5 commandes à connaître :
 git status                          # voir ce qui a changé
 git add mon_fichier.py              # préparer un fichier à sauvegarder
 git commit -m "Mon message"         # sauvegarder
-git push origin ma-branche          # envoyer sur GitHub
+git push -u origin HEAD             # envoyer sa branche sur GitHub
 git pull origin main                # récupérer le travail des autres
 ```
 
