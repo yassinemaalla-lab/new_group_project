@@ -19,6 +19,7 @@ from affichage import afficher_titre, afficher_resultat
 
 
 def afficher_menu():
+    
     # TODO : afficher les 3 options du menu
     pass
 
