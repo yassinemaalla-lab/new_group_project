@@ -121,7 +121,7 @@ Si plusieurs personnes veulent la même tâche, chacune crée **son propre fichi
 
 ```
 questions.py            <- version officielle
-questions_yassine.py    <- version de Yassine
+questions_yassine.py    <- version de lucas
 questions_sara.py       <- version de Sara
 ```
 
@@ -184,9 +184,7 @@ git pull origin main
 
 ## 7. Règles du groupe
 
-- Un fichier = une personne.
 - Pas de push direct sur `main` : passez par une Pull Request.
-- Un commit = une idée, avec un message clair.
 - Commentez votre code (au moins une phrase par fonction).
 - Pas de mot de passe ni d'information privée : le dépôt est public.
-- Demandez de l'aide dès que vous bloquez plus de 20 minutes.
+- Demandez de l'aide dès que vous bloquez.
