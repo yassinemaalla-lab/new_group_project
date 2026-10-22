@@ -113,7 +113,6 @@ Supprimez ces `print` avant de faire votre commit.
 | 6 | `affichage.py` | |
 | 7 (bonus) | `utils.py` | |
 
-Écrivez votre nom dans la colonne « Responsable » **avant** de commencer.
 
 ### Doublons autorisés
 
