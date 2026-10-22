@@ -1,0 +1,15 @@
+# Fichiers de cache et compilés Python
+__pycache__/
+*.py[cod]
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+
+# Fichiers de configuration VS Code personnels
+.vscode/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
