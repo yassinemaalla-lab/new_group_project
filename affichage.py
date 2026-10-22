@@ -17,9 +17,12 @@ Compétences : boucles, chaînes de caractères, formatage
 
 
 def afficher_titre(texte):
-    # TODO
-    pass
-
+    largeur = len(texte) + 2          # +2 pour un espace de chaque côté
+    print("|" + "-" * largeur + "|")
+    print("| " + texte + " |")
+    print("|" + "-" * largeur + "|")
+if __name__ == "__main__":
+  afficher_titre("QUIZ PYTHON")
 
 def afficher_question(numero, question):
     # TODO
